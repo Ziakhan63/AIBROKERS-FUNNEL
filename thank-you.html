@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — AI Brokers</title>
+  <meta name="description" content="Thanks for reaching out! An AI Brokers specialist will contact you within 24 hours." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230057FF'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white'>🏠</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Page-specific overrides */
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 24px; }
+    .ty-card {
+      background: var(--dark-mid);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 56px 48px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .ty-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+    .ty-icon {
+      font-size: 4rem;
+      margin-bottom: 24px;
+      display: block;
+      animation: pop 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    @keyframes pop {
+      from { transform: scale(0); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+    .ty-card h1 {
+      font-size: 2rem;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .ty-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .ty-steps {
+      text-align: left;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .ty-step {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .ty-step .step-dot {
+      width: 28px; height: 28px;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--primary), #0088FF);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .ty-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
+    @media (max-width: 520px) {
+      .ty-card { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal navbar -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="AI Brokers Home">
+        <div class="logo-icon" aria-hidden="true">🏠</div>
+        <span>AI Brokers</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="ty-card" role="main">
+      <span class="ty-icon" aria-hidden="true">🎉</span>
+
+      <h1>You're all set!</h1>
+
+      <p>
+        Thanks for requesting your free AI strategy consultation.
+        A dedicated AI Brokers specialist will reach out to you
+        at the email you provided <strong style="color:var(--white)">within 24 hours</strong>.
+      </p>
+
+      <div class="ty-steps" aria-label="What happens next">
+        <div class="ty-step">
+          <div class="step-dot" aria-hidden="true">1</div>
+          <span>Check your inbox for a confirmation email with prep materials.</span>
+        </div>
+        <div class="ty-step">
+          <div class="step-dot" aria-hidden="true">2</div>
+          <span>Your specialist will review your brokerage profile and deal history.</span>
+        </div>
+        <div class="ty-step">
+          <div class="step-dot" aria-hidden="true">3</div>
+          <span>You'll receive a personalized AI strategy and live platform demo.</span>
+        </div>
+      </div>
+
+      <p>
+        In the meantime, explore our resources to see how brokers like you
+        are using AI to close 40% more deals.
+      </p>
+
+      <div class="ty-actions">
+        <a href="index.html#features" class="btn btn-primary">Explore Features</a>
+        <a href="index.html" class="btn btn-outline">Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <p>© 2026 AI Brokers. All rights reserved.</p>
+        <div class="footer-links" role="list">
+          <a href="index.html#privacy" role="listitem">Privacy Policy</a>
+          <a href="index.html" role="listitem">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
